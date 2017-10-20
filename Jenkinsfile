@@ -12,7 +12,7 @@ pipeline {
         }
         stage('archive') {
             steps {
-                archiveArtifacts '*war'
+                archiveArtifacts 'target/*jar'
             }
         }
 
